@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SearchDemo</string>
+    <string name="search_hint">Tìm kiếm trên vatgia.com</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp">
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="56dp" />
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:layout_gravity="center_vertical"
+            android:id="@+id/bt_clear"
+            android:background="@drawable/ic_clear_all_black_24dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </TableRow>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_search"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFF">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="không có kết quả"
+        android:textStyle="italic"
+        android:visibility="gone" />
+</LinearLayout>
